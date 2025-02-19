@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1FFF9800"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="IMC_App"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelpoids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poids"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/titre"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="29dp" />
+
+    <EditText
+        android:id="@+id/poids"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Entrez votre poids"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@+id/labelpoids"
+        app:layout_constraintStart_toEndOf="@+id/labelpoids"
+        app:layout_constraintEnd_toStartOf="@+id/kg"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kg"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/poids"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/labeltaille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taille"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/labelpoids"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="29dp" />
+
+    <EditText
+        android:id="@+id/taille"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Entrez votre taille"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@+id/labeltaille"
+        app:layout_constraintStart_toEndOf="@+id/labeltaille"
+        app:layout_constraintEnd_toStartOf="@+id/m"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="m"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/taille"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="173dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre"
+        app:srcCompat="@drawable/imc" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="252dp"
+        android:layout_height="404dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Votre IMC est : "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="363dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#8BC34A"
+        android:text="Calculer IMC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taille" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

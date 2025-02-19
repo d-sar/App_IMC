@@ -25,3 +25,4 @@ L'application IMC (Indice de Masse Corporelle) est une application mobile dével
   Lancer la synchronisation des dépendances Gradle
 
 ## Captures d'écran
+![Capture d'écran 2025-02-19 094051](https://github.com/user-attachments/assets/de9eab2f-188a-47c7-b224-c940be94efa0)
